@@ -1,0 +1,56 @@
+{
+    "devDependencies": {
+        "copy-webpack-plugin": "^11.0.0",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.7.3",
+        "css-minimizer-webpack-plugin": "^4.2.2",
+        "eslint": "^8.30.0",
+        "html-webpack-plugin": "^5.5.0",
+        "husky": "^8.0.2",
+        "mini-css-extract-plugin": "^2.7.2",
+        "prettier": "^2.8.1",
+        "sass": "^1.57.1",
+        "sass-loader": "^13.2.0",
+        "style-loader": "^3.3.1",
+        "stylelint": "^14.16.0",
+        "stylelint-config-prettier": "^9.0.4",
+        "stylelint-config-standard": "^29.0.0",
+        "stylelint-prettier": "^2.0.0",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.11.1"
+    },
+    "dependencies": {
+        "axios": "^1.2.1",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "lodash": "^4.17.21",
+        "save-dev": "^0.0.1-security",
+        "stylelint-scss": "^4.3.0"
+    },
+    "name": "cardgame",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier —write .",
+        "lint:js": "eslint ./**/*.js",
+        "lint:scss": "stylelint ./**.scss",
+        "lint": "npm run lint:js && npm run lint:scss",
+        "prepare": "husky install",
+        "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+        "start": "webpack-dev-server"
+  
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Lika-2020/cardGameLocal.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Lika-2020/cardGameLocal/issues"
+    },
+    "homepage": "https://github.com/Lika-2020/cardGameLocal#readme",
+    "description": ""
+}

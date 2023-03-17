@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcardgame=self.webpackChunkcardgame||[]).push([[373],{373:(e,a,c)=>{c.r(a)}}]);

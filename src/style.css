@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #e5e5e5;
+}
+
+@font-face {
+  font-family: StratosSkyeng;
+  font-style: normal;
+  src: local("StratosSkyeng"), url("./fonts/stratosskyengweb-regular.woff") format("woff");
+}
+@font-face {
+  font-family: StratosSkyeng;
+  font-style: normal;
+  src: local("StratosSkyeng"), url("./fonts/stratosskyengweb-regular.woff2") format("woff2");
+}
+span {
+  padding-left: 20px;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1024px;
+  height: 774px;
+  background: #004980;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  perspective: 1000px;
+}
+
+.cards__image {
+  position: relative;
+  transition: 0.2s all;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.cards__image:active {
+  -webkit-animation: myAnim 2s ease 0s 1 normal forwards;
+          animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@-webkit-keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cards__image.flip {
+  transform: rotateY(180deg);
+}
+
+.back-face {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front-face {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card3,
+.card6,
+.card9 {
+  width: 95px;
+  height: 133px;
+}
+
+.color {
+  background: #e5e5e5;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 158px;
+}
+.game__card {
+  width: 480px;
+  height: 459px;
+  background: #c2f5ff;
+  border-radius: 12px;
+  margin-left: 272px;
+}
+.game__title {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 52px;
+  margin-left: 150px;
+  color: #004980;
+}
+.game__button {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+.game__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 67px;
+}
+.game__btn-start {
+  width: 246px;
+  height: 50px;
+  background: #7ac100;
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#radioButton {
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+}
+
+.button {
+  width: 98px;
+  height: 98px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: none;
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  color: #0080c1;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 35px;
+  padding-left: 180px;
+  padding-top: 100px;
+  width: 900px;
+}
+
+.number {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #ffffff;
+}
+
+.time-pad {
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unit-time {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  padding-left: 61px;
+}
+
+.btn {
+  margin-top: 45px;
+  margin-left: 550px;
+}/*# sourceMappingURL=style.css.map */
